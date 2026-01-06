@@ -1,0 +1,213 @@
+/*
+ * JavaFX Stylesheet - Google News Style (Blue & White)
+ */
+
+.root {
+    -fx-background-color: #FFFFFF; /* White Primary Background */
+    -fx-font-family: "Roboto", "Segoe UI", "Arial", sans-serif;
+}
+
+/* --- Top Header Styling --- */
+.header-bar {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 15px 24px;
+    -fx-border-color: #DADCE0; /* Light Gray Divider */
+    -fx-border-width: 0 0 1px 0;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.app-logo-text {
+    -fx-font-family: "Google Sans", "Roboto", sans-serif;
+    -fx-font-size: 22px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #5F6368; /* Medium Gray Logo */
+}
+
+/* --- Sidebar Styling --- */
+.sidebar {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: transparent; /* Cleaner look without border */
+    -fx-padding: 10px 0;
+}
+
+.sidebar-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.sidebar-title {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #5F6368; /* Medium Gray */
+    -fx-padding: 0 0 10px 15px;
+    -fx-text-transform: uppercase;
+}
+
+/* Accordion / TitledPane Styling */
+.accordion {
+    -fx-background-color: transparent;
+}
+
+.titled-pane {
+    -fx-text-fill: #3C4043; /* Dark Gray Text */
+}
+
+.titled-pane > .title {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 10px 24px;
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-cursor: hand;
+}
+
+.titled-pane:expanded > .title {
+    -fx-text-fill: #1A73E8; /* Google Blue Active */
+    -fx-background-color: #E8F0FE; /* Very Light Blue Background */
+    -fx-background-radius: 0 20px 20px 0; /* Rounded right side */
+}
+
+.titled-pane > .content {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 5px 0 5px 24px;
+}
+
+/* Sub-category Buttons in Sidebar */
+.subcategory-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3C4043; /* Body Text */
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 8px 15px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-background-radius: 0 20px 20px 0;
+}
+
+.subcategory-button:hover {
+    -fx-background-color: #F1F3F4; /* Light Gray Hover */
+}
+
+/* --- Controls --- */
+.combo-box {
+    -fx-background-color: #F1F3F4;
+    -fx-background-radius: 4px;
+    -fx-padding: 4px;
+}
+
+.text-input {
+    -fx-background-color: #F1F3F4;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 15px;
+    -fx-prompt-text-fill: #5F6368;
+    -fx-text-fill: #3C4043;
+}
+
+.text-input:focused {
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 1);
+}
+
+.button {
+    -fx-background-radius: 4px;
+    -fx-font-weight: 500;
+    -fx-cursor: hand;
+    -fx-padding: 8px 24px;
+    -fx-font-size: 14px;
+}
+
+.primary-button {
+    -fx-background-color: #1A73E8; /* Google Blue */
+    -fx-text-fill: white;
+}
+.primary-button:hover {
+    -fx-background-color: #1967D2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 1);
+}
+
+.secondary-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #1A73E8;
+    -fx-border-color: #DADCE0;
+    -fx-border-radius: 4px;
+}
+.secondary-button:hover {
+    -fx-background-color: #F1F3F4;
+    -fx-text-fill: #174EA6;
+}
+
+.action-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #5F6368;
+}
+.action-button:hover {
+    -fx-text-fill: #202124;
+}
+
+/* --- News Feed --- */
+.news-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-padding: 0;
+}
+
+.news-grid {
+    -fx-background-color: transparent;
+}
+
+/* Article Card */
+.article-box {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 8px;
+    -fx-border-color: #DADCE0;
+    -fx-border-width: 1px;
+    -fx-padding: 20px;
+    -fx-max-width: 800px;
+}
+.article-box:hover {
+    -fx-border-color: #1A73E8; /* Blue border on hover */
+}
+
+.article-title {
+    -fx-font-family: "Google Sans", "Roboto", sans-serif;
+    -fx-font-size: 20px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #202124; /* Almost Black */
+    -fx-underline: false;
+}
+.article-title:hover {
+    -fx-text-fill: #1A73E8; /* Blue on hover */
+    -fx-underline: true;
+}
+
+.article-meta {
+    -fx-font-size: 12px;
+    -fx-fill: #5F6368; /* Medium Gray */
+}
+
+.article-description {
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-size: 14px;
+    -fx-fill: #3C4043; /* Body Text */
+    -fx-line-spacing: 4px;
+}
+
+.status-label { -fx-font-size: 12px; -fx-font-weight: 500; }
+.status-disconnected { -fx-text-fill: #D93025; } /* Google Red */
+.status-connected { -fx-text-fill: #188038; }    /* Google Green */
+
+/* Menu Button Styling */
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #5F6368;
+}
+.menu-button:hover {
+    -fx-background-color: #F1F3F4;
+    -fx-text-fill: #202124;
+}
+.menu-button .label {
+    -fx-text-fill: #5F6368;
+}
+.menu-button:hover .label {
+    -fx-text-fill: #202124;
+}
